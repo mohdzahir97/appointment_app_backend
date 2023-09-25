@@ -30,6 +30,6 @@ userRouter.route("/me/activate").put(isAuthenticatedUser,userActivate)
 
 
 
-userRouter.route("/get").get(isAuthenticatedUser).get(demo)
+userRouter.route("/").get(isAuthenticatedUser).get(demo)
 
 module.exports = { userRouter }
