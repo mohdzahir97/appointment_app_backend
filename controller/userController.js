@@ -77,6 +77,8 @@ exports.profileDetails = catchAsyncErrors(async (req, res, next) => {
 
     const user = await userModel.findById({ _id: req.user.id })
 
+    console.log(user);
+
     if (!user) {
         return next(new ErrorHandler("User Details Not Found...", 401))
     }
