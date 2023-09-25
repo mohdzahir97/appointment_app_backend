@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use(cors({
-  origin:[process.env.FORONTEND_URL],
+  origin:["*"],
   credentials:true
 }))
 
