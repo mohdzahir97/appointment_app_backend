@@ -20,6 +20,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
+
+app.use(cors({
+  origin: "*",
+  credentials: true
+}))
+
+
 app.use(function (req, res, next) {
   // res.header("Access-Control-Allow-Origin", "*");
   const allowedOrigins = ['http://localhost:3000', 'https://appointment-ifvu.onrender.com'];
