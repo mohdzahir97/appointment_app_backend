@@ -28,8 +28,6 @@ userRouter.route("/password/update").put(isAuthenticatedUser,changePassword)
 
 userRouter.route("/me/activate").put(isAuthenticatedUser,userActivate)
 
-
-
-userRouter.route("/").get(isAuthenticatedUser).get(demo)
+userRouter.route("/").get(demo)
 
 module.exports = { userRouter }

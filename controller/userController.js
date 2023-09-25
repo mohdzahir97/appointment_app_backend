@@ -68,7 +68,7 @@ exports.demo = catchAsyncErrors(async (req, res, next) => {
 
     res.status(200).json({
         sucess: true,
-        message: "hello from xyz"
+        message: "hello get api is working"
     })
 })
 
