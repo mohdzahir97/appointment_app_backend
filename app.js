@@ -21,10 +21,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.use(cors({
-  origin: "*",
-  credentials: true
-}))
 
 
 app.use(function (req, res, next) {
